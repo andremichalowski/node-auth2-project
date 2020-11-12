@@ -20,11 +20,11 @@ Setup:
 - [x] Dependencies
 - [x] Server
 - [x] Knex, migration, config
-- [] Schema
+- [x] Schema
 
 MVP:
-- [] Hashing 
-- [] JWT token for login
+- [x] Hashing 
+- [x] JWT token for login
 - [] Reading the token (restriction-mw)
 - [] Restricting access further by only allowing roles that match role in token
 
