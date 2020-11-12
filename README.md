@@ -9,12 +9,24 @@ In this project we'll implement a full authentication workflow (register/login/l
 ### Task 1: Set Up The Project With Git
 
 Follow these steps to set up and work on your project:
+- [x] Initial commit
+- [x] Create a forked copy of this project.
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!).
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
+- [x] Push commits: git push -u origin `<firstName-lastName>`.
 
-- [ ] Create a forked copy of this project.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push -u origin `<firstName-lastName>`.
+Setup:
+- [x] Dependencies
+- [x] Server
+- [x] Knex, migration, config
+- [] Schema
+
+MVP:
+- [] Hashing 
+- [] JWT token for login
+- [] Reading the token (restriction-mw)
+- [] Restricting access further by only allowing roles that match role in token
 
 ### Task 2: Minimum Viable Product
 
@@ -31,6 +43,16 @@ Use **JSON Web Tokens** to keep users authenticated across requests.
 | POST   | /api/register | Creates a `user` using the information sent inside the `body` of the request. **Hash the password** before saving the user to the database.                                                                                                                            |
 | POST   | /api/login    | Use the credentials sent inside the `body` to authenticate the user. On successful login, create a new JWT with the user id as the subject and send it back to the client. If login fails, respond with the correct status code and the message: 'You shall not pass!' |
 | GET    | /api/users    | If the user is logged in, respond with an array of all the users contained in the database. If the user is not logged in respond with the correct status code and the message: 'You shall not pass!'.                                                                  |
+
+
+
+
+
+
+
+
+
+
 
 ### Task 3: Stretch Goals
 
