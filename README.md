@@ -25,8 +25,8 @@ Setup:
 MVP:
 - [x] Hashing 
 - [x] JWT token for login
-- [] Reading the token (restriction-mw)
-- [] Restricting access further by only allowing roles that match role in token
+- [x] Reading the token (restriction-mw)
+- [x] Restricting access further by only allowing roles that match role in token
 
 ### Task 2: Minimum Viable Product
 
